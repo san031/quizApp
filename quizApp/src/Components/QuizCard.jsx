@@ -17,11 +17,14 @@ function QuizCard({apidata}) {
     {/* console.log({JSON.stringify(apidata[0].id)}) */}
     {/* console.log({JSON.stringify(apidata.id)}) */}
    { console.log(JSON.stringify(apidata[index]))}
-    console.log(apidata[index]?.correctAnswer);
+    {/* console.log(apidata[index]?.correctAnswer); */}
     {/* console.log(parseInt(${id})) */}
     {/* parseInt({id}) */}
    {/* console.log({typeof( parseInt(id))}) */}
    {/* {apidata[parseInt(id)]} */}
+   <div>
+    {JSON.stringify(apidata[index])}
+   </div>
    
     <Link to={`/quiz/${parseInt(id)+1}`}>Next Question</Link>
 

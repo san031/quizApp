@@ -22,8 +22,7 @@ function App() {
     {path:'/' , element:<Root/>,
       children:[
         {path:'', element:<Home apidata={apidata}/>},
-        {path:'/quiz', element:<Quizmain/>},
-        {path:'/quiz/:id', element:<QuizCard/>}
+        {path:'/quiz/:id', element:<QuizCard apidata={apidata}/>}
       ]
     }
   ])
